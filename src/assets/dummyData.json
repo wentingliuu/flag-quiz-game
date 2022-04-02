@@ -136,7 +136,7 @@
     "level": 20,
     "country": "luxembourg",
     "continent": "europe",
-    "blockColors": ["red", "white", "blue-light"],
+    "blockColors": ["red", "white", "DeepSkyBlue"],
     "showComponent": "vertical"
   },
   {

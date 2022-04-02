@@ -26,7 +26,7 @@
           v-for="color in colors"
           :key="color"
           class="color"
-          :class="color"
+          :style="{'background-color': color}"
           @click="addColor(color)"
         >
         </div>
@@ -39,11 +39,20 @@
     />
 
     <button 
+      v-if="!isSubmitted"
       class="main_button btn"
       :disabled="btnDisabled"
       @click="submitAnswer"
     >
       submit
+    </button>
+
+    <button 
+      v-if="isSubmitted"
+      class="main_button btn"
+      @click="afterSubmit"
+    >
+      {{ showPopup | buttonText }}
     </button>
 
     <p class="copy-right">©2022 WENTING LIU</p>
@@ -63,12 +72,19 @@ export default {
     return {
       currentLevel: 0,
       currentBlock: 1,
-      colors: ['red', 'orange', 'yellow', 'green', 'blue-light', 'blue', 'white', 'black'],
+      colors: ['red', 'orange', 'yellow', 'green', 'DeepSkyBlue', 'blue', 'white', 'black'],
       blockColors: ['', '', ''],
       btnDisabled: true,
       isSubmitted: false,
       showPopup: 'finished',
       dummyData: Json
+    }
+  },
+  filters: {
+    buttonText(value) {
+      return (value === 'correct') ? 'next'
+         : (value === 'wrong') ? 'back'
+         : 'restart'
     }
   },
   methods: {
@@ -83,17 +99,33 @@ export default {
       }
     },
     submitAnswer() {
+      this.isSubmitted = true,
+      this.btnDisabled = false
       if (JSON.stringify(this.blockColors) === JSON.stringify(this.dummyData[this.currentLevel].blockColors)) {
-        console.log('Correct!')
-        this.isSubmitted = true,
-        this.btnDisabled = false,
+        if (this.currentLevel === 23 ) {
+          return this.showPopup = 'finished'
+        }
         this.showPopup = 'correct'
-
       } else {
-        console.log('false')
-        this.isSubmitted = true,
-        this.btnDisabled = false,
         this.showPopup = 'wrong'
+      } 
+    },
+    afterSubmit() {
+      this.currentBlock = 1
+      this.blockColors = ['', '', '']
+      this.btnDisabled = true,
+      this.isSubmitted = false
+
+      if(this.showPopup === 'correct') {
+        console.log('answer correct!')
+        this.currentLevel++
+      } else if (this.showPopup === 'wrong') {
+        console.log('answer wrong!')
+        this.isSubmitted = false,
+        this.btnDisabled = true
+      } else {
+        console.log('finished!')
+        this.currentLevel = 0
       }
     }
   }
