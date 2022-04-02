@@ -1,0 +1,170 @@
+[
+  {
+    "level": 1,
+    "country": "belgium",
+    "continent": "europe",
+    "blockColors": ["black", "yellow", "red"],
+    "showComponent": "horizontal"
+  },
+  {
+    "level": 2,
+    "country": "chad",
+    "continent": "africa",
+    "blockColors": ["blue", "yellow", "red"],
+    "showComponent": "horizontal"
+  },
+  {
+    "level": 3,
+    "country": "france",
+    "continent": "europe",
+    "blockColors": ["blue", "white", "red"],
+    "showComponent": "horizontal"
+  },
+  {
+    "level": 4,
+    "country": "guinea",
+    "continent": "africa",
+    "blockColors": ["red", "yellow", "green"],
+    "showComponent": "horizontal"
+  },
+  {
+    "level": 5,
+    "country": "ireland",
+    "continent": "europe",
+    "blockColors": ["green", "white", "orange"],
+    "showComponent": "horizontal"
+  },
+  {
+    "level": 6,
+    "country": "italy",
+    "continent": "europe",
+    "blockColors": ["green", "white", "red"],
+    "showComponent": "horizontal"
+  },
+  {
+    "level": 7,
+    "country": "ivory coast",
+    "continent": "africa",
+    "blockColors": ["orange", "white", "green"],
+    "showComponent": "horizontal"
+  },
+  {
+    "level": 8,
+    "country": "mali",
+    "continent": "africa",
+    "blockColors": ["green", "yellow", "red"],
+    "showComponent": "horizontal"
+  },
+  {
+    "level": 9,
+    "country": "romania",
+    "continent": "europe",
+    "blockColors": ["blue", "yellow", "red"],
+    "showComponent": "horizontal"
+  },
+  {
+    "level": 10,
+    "country": "armenia",
+    "continent": "asia",
+    "blockColors": ["red", "blue", "orange"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 11,
+    "country": "austria",
+    "continent": "europe",
+    "blockColors": ["red", "white", "red"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 12,
+    "country": "bulgaria",
+    "continent": "europe",
+    "blockColors": ["white", "green", "red"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 13,
+    "country": "colombia",
+    "continent": "south america",
+    "blockColors": ["yellow", "blue", "red"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 14,
+    "country": "estonia",
+    "continent": "europe",
+    "blockColors": ["blue", "black", "white"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 15,
+    "country": "gabon",
+    "continent": "africa",
+    "blockColors": ["green", "yellow", "blue"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 16,
+    "country": "germany",
+    "continent": "europe",
+    "blockColors": ["black", "red", "yellow"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 17,
+    "country": "hungary",
+    "continent": "europe",
+    "blockColors": ["red", "white", "green"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 18,
+    "country": "latvia",
+    "continent": "europe",
+    "blockColors": ["red", "white", "red-dark"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 19,
+    "country": "lithuania",
+    "continent": "europe",
+    "blockColors": ["yellow", "green", "red"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 20,
+    "country": "luxembourg",
+    "continent": "europe",
+    "blockColors": ["red", "white", "blue-light"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 21,
+    "country": "netherlands",
+    "continent": "europe",
+    "blockColors": ["red", "white", "blue"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 22,
+    "country": "russia",
+    "continent": "asia / europe",
+    "blockColors": ["white", "blue", "red"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 23,
+    "country": "sierra leone",
+    "continent": "africa",
+    "blockColors": ["green", "white", "blue"],
+    "showComponent": "vertical"
+  },
+  {
+    "level": 24,
+    "country": "yemen",
+    "continent": "asia",
+    "blockColors": ["red", "white", "black"],
+    "showComponent": "vertical"
+  }
+]

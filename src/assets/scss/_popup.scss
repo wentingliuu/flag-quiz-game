@@ -1,0 +1,35 @@
+.main_wrapper.pop-up {
+  div{
+    background-color: var(--dark-purple);
+  }
+  .main_block {
+    background-size: contain ;
+    background-repeat: no-repeat;
+    background-position: center calc(50% - 10px) ;
+  }
+  .main_color {
+    color: var(--white);
+    font-size: 2.2rem;
+  }
+}
+
+.main_wrapper.pop-up.correct {
+  .main_block {
+    background-image: url('./../images/correct.png');
+  }
+}
+.main_wrapper.pop-up.wrong {
+  .main_block {
+    background-image: url('./../images/wrong.png');
+  }
+}
+
+.main_wrapper.pop-up.finished {
+  div{
+    background-color: var(--main-pink);
+  }
+  .main_block {
+    background-image: url('./../images/finish.png');
+  }
+}
+

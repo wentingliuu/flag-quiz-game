@@ -7,7 +7,8 @@
     </div>
 
     <div
-      :class="showComponent"
+      v-if="!isSubmitted"
+      :class="dummyData[currentLevel].showComponent"
       class="main_wrapper"
     >
       <div class="main_block">
@@ -32,6 +33,11 @@
       </div>
     </div>
 
+    <Popup
+     v-else
+     :show-popup="showPopup"
+    />
+
     <button 
       class="main_button btn"
       :disabled="btnDisabled"
@@ -45,36 +51,24 @@
 </template>
 
 <script>
+import Popup from '../components/Popup'
+import Json from '../assets/dummyData.json'
+
 export default {
   name: 'Main',
+  components: {
+    Popup
+  },
   data() {
     return {
-      showComponent: 'horizontal',
       currentLevel: 0,
       currentBlock: 1,
       colors: ['red', 'orange', 'yellow', 'green', 'blue-light', 'blue', 'white', 'black'],
       blockColors: ['', '', ''],
       btnDisabled: true,
-      dummyData: [
-        {
-          level: 1,
-          country: 'belgium',
-          continent: 'europe',
-          blockColors: ['black', 'yellow', 'red']
-        },
-        {
-          level: 2,
-          country: 'chad',
-          continent: 'africa',
-          blockColors: ['blue', 'yellow', 'red']
-        },
-        {
-          level: 3,
-          country: 'france',
-          continent: 'europe',
-          blockColors: ['blue', 'white', 'red']
-        }
-      ]
+      isSubmitted: false,
+      showPopup: 'finished',
+      dummyData: Json
     }
   },
   methods: {
@@ -91,8 +85,15 @@ export default {
     submitAnswer() {
       if (JSON.stringify(this.blockColors) === JSON.stringify(this.dummyData[this.currentLevel].blockColors)) {
         console.log('Correct!')
+        this.isSubmitted = true,
+        this.btnDisabled = false,
+        this.showPopup = 'correct'
+
       } else {
         console.log('false')
+        this.isSubmitted = true,
+        this.btnDisabled = false,
+        this.showPopup = 'wrong'
       }
     }
   }
