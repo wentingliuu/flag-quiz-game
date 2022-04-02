@@ -68,10 +68,6 @@ button:focus {
   cursor: pointer;
 }
 
-button[disabled] {
-  pointer-events: none;
-}
-
 input:focus,
 textarea:focus,
 select,
