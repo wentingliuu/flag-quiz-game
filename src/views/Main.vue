@@ -2,13 +2,13 @@
   <div class="main">
     <div class="main_title">flag quiz game</div>
     <div class="main_country">
-      <div class="name">{{ dummyData[currentLevel].country }}</div>
-      <div class="continent">({{dummyData[currentLevel].continent}})</div>
+      <div class="name">{{ dummyData.country }}</div>
+      <div class="continent">({{dummyData.continent}})</div>
     </div>
 
     <div
       v-if="!isSubmitted"
-      :class="dummyData[currentLevel].showComponent"
+      :class="dummyData.showComponent"
       class="main_wrapper"
     >
       <div class="main_block">
@@ -77,8 +77,13 @@ export default {
       btnDisabled: true,
       isSubmitted: false,
       showPopup: 'finished',
-      dummyData: Json
+      dummyData: {}
     }
+  },
+  created() {
+    const id = this.$route.params.id
+    this.currentLevel = Number(id)
+    this.fetchData(id)
   },
   filters: {
     buttonText(value) {
@@ -88,6 +93,12 @@ export default {
     }
   },
   methods: {
+    fetchData(id) {
+      this.dummyData = Json[id - 1]
+      if (!this.dummyData) {
+        this.$router.push({ name: 'entry'})
+      }
+    },
     addColor(color) {
       if (this.currentBlock === 0) return
       this.blockColors[this.currentBlock - 1] = color
@@ -101,8 +112,8 @@ export default {
     submitAnswer() {
       this.isSubmitted = true,
       this.btnDisabled = false
-      if (JSON.stringify(this.blockColors) === JSON.stringify(this.dummyData[this.currentLevel].blockColors)) {
-        if (this.currentLevel === 23 ) {
+      if (JSON.stringify(this.blockColors) === JSON.stringify(this.dummyData.blockColors)) {
+        if (this.dummyData.level === 24 ) {
           return this.showPopup = 'finished'
         }
         this.showPopup = 'correct'
@@ -116,16 +127,16 @@ export default {
       this.btnDisabled = true,
       this.isSubmitted = false
 
-      if(this.showPopup === 'correct') {
-        console.log('answer correct!')
+      if (this.showPopup === 'correct') {
         this.currentLevel++
-      } else if (this.showPopup === 'wrong') {
-        console.log('answer wrong!')
-        this.isSubmitted = false,
-        this.btnDisabled = true
-      } else {
-        console.log('finished!')
+        this.$router.push({
+          name: 'main',
+          params: { id: this.currentLevel }
+        })
+        this.fetchData(this.currentLevel)
+      } else if (this.showPopup === 'finished') {
         this.currentLevel = 0
+        this.$router.push({ name: 'entry'})
       }
     }
   }

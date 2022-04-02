@@ -8,11 +8,11 @@ Vue.use(Router)
 const routes = [
   {
     path: '/',
-    name: 'root',
+    name: 'entry',
     component: Entry
   },
   {
-    path: '/flag',
+    path: '/flag/:id',
     name: 'main',
     component: Main
   },

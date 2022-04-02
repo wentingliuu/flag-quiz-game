@@ -40,13 +40,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        transition: background-color 0.7s ease-in;
       }
       .block:nth-of-type(1) {
         border: none;
       }
 
       .block.active {
-        border: 2px solid var(--dark-purple);
+        border: 3px solid var(--dark-purple);
         cursor: pointer;
       }
       .block.active + .block {

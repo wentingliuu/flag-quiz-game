@@ -1,0 +1,91 @@
+.entry {
+  text-align: center;
+  position: relative;
+
+  .brush {
+    position: absolute;
+    right: -3vw;
+    bottom: 20vh;
+    opacity: 0.3;
+    animation: opacity 3.5s ease-out;
+
+    @keyframes opacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0.3;
+      }
+    }
+    
+  }
+
+  &_title {
+    height: 65vh;
+    width: 100vw;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: right;
+    padding-top: 30vh;
+    padding-right: 5vw;
+    color: transparent;
+
+    .title {
+      background: linear-gradient(90deg, #000, #000, transparent);
+      letter-spacing: 3px;
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      background-repeat: no-repeat;
+      background-size: 120%;
+      animation: show 3s linear;
+      background-position-x: -150%;
+
+      @keyframes show {
+        0% {
+          background-position-x: 300%;
+        }
+        100% {
+          background-position-x: -150%;
+        }
+      }
+    }
+  }
+  &_button {
+    margin-top: 2.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--dark-purple);
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: var(--dark-purple);
+    }
+    &:focus{
+      background-color: var(--dark-purple);
+    }
+  }
+  p {
+    margin-top: 2rem;
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .entry {
+    .brush {
+      right: 0;
+      bottom: 18vh;
+    }
+    &_title {
+      max-width: 600px;
+      padding-top: 35vh;
+      padding-right: 3vw;
+    }
+  }
+}
