@@ -12,6 +12,11 @@ const routes = [
     component: Entry
   },
   {
+    path: '/level',
+    name: 'level',
+    component: () => import('../views/Level.vue')
+  },
+  {
     path: '/flag/:id',
     name: 'main',
     component: Main

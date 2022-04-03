@@ -54,8 +54,11 @@
     >
       {{ showPopup | buttonText }}
     </button>
-
-    <a href="https://github.com/wentingliuu/flag-quiz-game" target="_blank" class="copy-right">©2022 WENTING LIU</a>
+    
+    <router-link class="level_tab" to="/level">
+      <font-awesome-icon icon="fa-solid fa-barcode" class="icon"/>
+      <span>LEVEL</span>
+    </router-link>
   </div>
 </template>
 

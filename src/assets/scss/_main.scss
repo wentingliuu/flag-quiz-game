@@ -14,14 +14,14 @@
       font-size: 2rem;
     }
     .continent {
-      margin-top: 0.75rem;
+      margin-top: 0.5rem;
       font-size: 1rem;
     }
   }
   
   &_wrapper {
     height: 50vh;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,7 +95,7 @@
   }
   
   &_button {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     padding: 0.75rem 1rem;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -116,10 +116,34 @@
       cursor: not-allowed;
     }
   }
-  a {
-    display: block;
-    margin-top: 2rem;
-    font-size: 0.5rem;
+
+  .level_tab {
+    background-color: var(--dark-purple);
+    padding-top: 30px;
+    position: fixed;
+    right: -60px;
+    top: -20px;
+
+    width: 150px;
+    height: 75px;
+    transform: rotate(45deg);
+
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    opacity: 0.6;
+
+    &:hover {
+      color: white
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+    span {
+      margin-top: 4px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -135,7 +159,6 @@
   .main {
     &_title {
       font-size: 2.5rem;
-      margin-top: 0.75rem;
     }
     &_country {
       margin-top: 2rem;
@@ -172,6 +195,23 @@
         .color:nth-of-type(3) {
           width: 35px;
         }
+      }
+    }
+
+    .level_tab {
+      padding-top: 35px;
+      right: -75px;
+      top: -25px;
+
+      width: 200px;
+      height: 100px;
+      opacity: 0.7;
+
+      .icon {
+        font-size: 30px;
+      }
+      span {
+        margin-top: 4px;
       }
     }
   }

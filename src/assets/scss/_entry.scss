@@ -5,7 +5,7 @@
   .brush {
     position: absolute;
     right: -3vw;
-    bottom: 20vh;
+    bottom: 17vh;
     opacity: 0.3;
     animation: opacity 3.5s ease-out;
 
@@ -26,7 +26,7 @@
     font-size: 4rem;
     font-weight: 700;
     text-align: right;
-    padding-top: 30vh;
+    padding-top: 25vh;
     padding-right: 5vw;
     color: transparent;
 
@@ -53,7 +53,6 @@
     }
   }
   &_button {
-    margin-top: 2.5rem;
     padding: 0.75rem 1rem;
     font-size: 1.25rem;
     text-transform: uppercase;
@@ -70,23 +69,19 @@
       background-color: var(--dark-purple);
     }
   }
-  .copy-right {
-    display: block;
-    margin-top: 2rem;
-    font-size: 0.5rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .entry {
     .brush {
-      right: 0;
-      bottom: 18vh;
+      right: 1vw;
+      bottom: 10vh;
     }
     &_title {
       max-width: 600px;
-      padding-top: 35vh;
-      padding-right: 3vw;
+      height: 60vh;
+      padding-top: 30vh;
+      padding-right: 4vw;
     }
   }
 }
