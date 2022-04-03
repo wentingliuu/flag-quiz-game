@@ -16,9 +16,10 @@
         v-for="item in dummyData"
         :to="{name: 'main', params: { id: item.level}}"
         :key="item.level"
+        :class="{active: item.level === currentLevel, done: item.level < currentLevel}"
         class="level_list_item"
       >
-        {{item.level}} {{item.country}}
+        {{item.level}} {{item.country}} {{item.flag}}
       </router-link>
 
     </div>
@@ -35,11 +36,13 @@ export default {
   name: 'Level',
   data() {
     return {
-      dummyData: {}
+      dummyData: {},
+      currentLevel: 0
     }
   },
   created() {
     this.fetchData()
+    this.currentLevel = this.$route.query.id
   },
   methods: {
     fetchData() {

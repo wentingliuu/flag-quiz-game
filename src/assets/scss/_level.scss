@@ -40,9 +40,17 @@
       text-transform: capitalize;
       cursor: pointer;
     }
-    &_item:hover {
+    &_item:hover,
+    &_item.active:hover {
       color: white;
       background-color: var(--dark-purple);
+    }
+    &_item.active {
+      background-color: var(--dark-pink);
+    }
+    &_item.done {
+      background-color: var(--main-pink);
+      opacity: 0.7;
     }
   }
   &_button {

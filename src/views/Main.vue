@@ -55,7 +55,10 @@
       {{ showPopup | buttonText }}
     </button>
     
-    <router-link class="level_tab" to="/level">
+    <router-link
+      :to="{name: 'level', query: {id: dummyData.level}}"
+      class="level_tab"
+    >
       <font-awesome-icon icon="fa-solid fa-barcode" class="icon"/>
       <span>LEVEL</span>
     </router-link>
