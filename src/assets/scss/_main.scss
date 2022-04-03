@@ -5,10 +5,9 @@
     font-size: 1.75rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 0.75rem;
   }
   &_country {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     text-transform: capitalize;
 
     .name {
@@ -21,7 +20,7 @@
   }
   
   &_wrapper {
-    height: 45vh;
+    height: 50vh;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
@@ -59,27 +58,28 @@
     }
 
     .main_color {
-      padding: 0 1rem;
-      height: 10vh;
-      background-color: var(--block-background);
-      box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
+      height: 16vh;
 
       display: flex;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
 
       .color {
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-        box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+        width: 25%;
+        height: 8vh;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
 
         &:hover {
           cursor: pointer;
           transform: scale(1.05);
           opacity: 0.75;
         }
+      }
+      .color:nth-of-type(1),
+      .color:nth-of-type(2),
+      .color:nth-of-type(3) {
+        width: 33.3%;
       }
     }
   }
@@ -123,10 +123,48 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .main {
     &_title {
       font-size: 2.5rem;
+      margin-top: 0.75rem;
+    }
+    &_country {
+      margin-top: 2rem;
+    }
+
+    &_wrapper {
+      height: 45vh;
+
+      .main_color {
+        padding: 0 1rem;
+        height: 10vh;
+        background-color: var(--block-background);
+        box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .color {
+          height: 35px;
+          width: 35px;
+          border-radius: 50%;
+          box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            opacity: 0.75;
+          }
+        }
+        .color:nth-of-type(1),
+        .color:nth-of-type(2),
+        .color:nth-of-type(3) {
+          width: 35px;
+        }
+      }
     }
   }
 }
