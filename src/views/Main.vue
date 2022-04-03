@@ -11,13 +11,18 @@
       :class="dummyData.showComponent"
       class="main_wrapper"
     >
-      <div class="main_block">
+      <div
+        class="main_block"
+        @mouseenter="mouseEnter()"
+        @mouseleave="mouseLeave()"
+      >
         <div
           v-for="(block, index) in blockColors"
           :key="index"
           :class="{active: currentBlock === index + 1}"
           class="block"
           :style="{'background-color': block, 'flex': dummyData.blockFlex[index]}"
+          @click="changeBlockTo(index +1)"
         ></div>
       </div>
 
@@ -76,6 +81,7 @@ export default {
   },
   data() {
     return {
+      cacheBlock: 0,
       currentBlock: 1,
       blockColors: ['', '', ''],
       btnDisabled: true,
@@ -111,6 +117,18 @@ export default {
         this.currentBlock = 0
         this.btnDisabled = false
       }
+    },
+    changeBlockTo(id) {
+      this.currentBlock = id
+      this.blockColors[this.currentBlock - 1] = ''
+    },
+    mouseEnter() {
+      this.cacheBlock = this.currentBlock
+      this.currentBlock = 0
+    },
+    mouseLeave() {
+      if (this.currentBlock !== 0) return
+      this.currentBlock = this.cacheBlock
     },
     submitAnswer() {
       this.isSubmitted = true,

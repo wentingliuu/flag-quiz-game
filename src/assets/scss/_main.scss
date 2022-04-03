@@ -32,7 +32,7 @@
       display: flex;
       background-color: var(--block-background);
       box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
-
+      
       .block {
         border-left: 1px solid #000000;
         height: 100%;
@@ -47,13 +47,19 @@
         border: none;
       }
 
-      .block.active {
+      .block.active,
+      .block:hover {
         border: 3px solid var(--dark-purple);
         cursor: pointer;
       }
-      .block.active + .block {
+      .block.active + .block,
+      .block:hover + .block {
         border-left: 0;
         border-top: 0;
+      }
+
+      .block:hover {
+        border: 3px solid var(--dark-pink);
       }
     }
 
