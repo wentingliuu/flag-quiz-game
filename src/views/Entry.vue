@@ -19,7 +19,7 @@
       <router-link to="/flag/1">start</router-link>
     </button>
 
-    <p class="copy-right">©2022 WENTING LIU</p>
+    <a href="https://github.com/wentingliuu/flag-quiz-game" target="_blank" class="copy-right">©2022 WENTING LIU</a>
 
   </div>
 </template>

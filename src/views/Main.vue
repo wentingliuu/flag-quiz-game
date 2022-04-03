@@ -17,13 +17,13 @@
           :key="index"
           :class="{active: currentBlock === index + 1}"
           class="block"
-          :style="{'background-color': block}"
+          :style="{'background-color': block, 'flex': dummyData.blockFlex[index]}"
         ></div>
       </div>
 
       <div class="main_color">
         <div 
-          v-for="color in colors"
+          v-for="color in dummyData.colors"
           :key="color"
           class="color"
           :style="{'background-color': color}"
@@ -55,7 +55,7 @@
       {{ showPopup | buttonText }}
     </button>
 
-    <p class="copy-right">©2022 WENTING LIU</p>
+    <a href="https://github.com/wentingliuu/flag-quiz-game" target="_blank" class="copy-right">©2022 WENTING LIU</a>
   </div>
 </template>
 
@@ -70,9 +70,7 @@ export default {
   },
   data() {
     return {
-      currentLevel: 0,
       currentBlock: 1,
-      colors: ['red', 'orange', 'yellow', 'green', 'DeepSkyBlue', 'blue', 'white', 'black'],
       blockColors: ['', '', ''],
       btnDisabled: true,
       isSubmitted: false,
@@ -82,7 +80,6 @@ export default {
   },
   created() {
     const id = this.$route.params.id
-    this.currentLevel = Number(id)
     this.fetchData(id)
   },
   filters: {
@@ -128,14 +125,13 @@ export default {
       this.isSubmitted = false
 
       if (this.showPopup === 'correct') {
-        this.currentLevel++
+        const id = Number(this.$route.params.id) + 1
         this.$router.push({
           name: 'main',
-          params: { id: this.currentLevel }
+          params: { id }
         })
-        this.fetchData(this.currentLevel)
+        this.fetchData(id)
       } else if (this.showPopup === 'finished') {
-        this.currentLevel = 0
         this.$router.push({ name: 'entry'})
       }
     }

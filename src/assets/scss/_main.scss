@@ -2,9 +2,10 @@
   text-align: center;
 
   &_title {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: 0.75rem;
   }
   &_country {
     margin-top: 2rem;
@@ -115,7 +116,8 @@
       cursor: not-allowed;
     }
   }
-  p {
+  a {
+    display: block;
     margin-top: 2rem;
     font-size: 0.5rem;
   }

@@ -4,69 +4,89 @@
     "country": "belgium",
     "continent": "europe",
     "blockColors": ["black", "yellow", "red"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "orange", "yellow", "green", "blue", "white", "black"],
     "showComponent": "horizontal"
   },
   {
     "level": 2,
     "country": "chad",
     "continent": "africa",
-    "blockColors": ["blue", "yellow", "red"],
+    "blockColors": ["DarkBlue", "Gold", "FireBrick"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["FireBrick", "orange", "Gold", "green", "DarkBlue", "white", "black"],
     "showComponent": "horizontal"
   },
   {
     "level": 3,
     "country": "france",
     "continent": "europe",
-    "blockColors": ["blue", "white", "red"],
+    "blockColors": ["MediumBlue", "white", "red"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "orange", "yellow", "green", "MediumBlue", "white", "black"],
     "showComponent": "horizontal"
   },
   {
     "level": 4,
     "country": "guinea",
     "continent": "africa",
-    "blockColors": ["red", "yellow", "green"],
+    "blockColors": ["Crimson", "Gold", "MediumSeaGreen"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["Crimson", "orange", "Gold", "MediumSeaGreen", "blue", "white", "black"],
     "showComponent": "horizontal"
   },
   {
     "level": 5,
     "country": "ireland",
     "continent": "europe",
-    "blockColors": ["green", "white", "orange"],
+    "blockColors": ["MediumSeaGreen", "white", "DarkOrange"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "DarkOrange", "yellow", "MediumSeaGreen", "blue", "white", "black"],
     "showComponent": "horizontal"
   },
   {
     "level": 6,
     "country": "italy",
     "continent": "europe",
-    "blockColors": ["green", "white", "red"],
+    "blockColors": ["ForestGreen", "white", "Crimson"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["Crimson", "orange", "yellow", "ForestGreen", "blue", "white", "black"],
     "showComponent": "horizontal"
   },
   {
     "level": 7,
     "country": "ivory coast",
     "continent": "africa",
-    "blockColors": ["orange", "white", "green"],
+    "blockColors": ["DarkOrange", "white", "MediumSeaGreen"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "DarkOrange", "yellow", "MediumSeaGreen", "blue", "white", "black"],
     "showComponent": "horizontal"
   },
   {
     "level": 8,
     "country": "mali",
     "continent": "africa",
-    "blockColors": ["green", "yellow", "red"],
+    "blockColors": ["MediumSeaGreen", "Gold", "Crimson"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["Crimson", "orange", "Gold", "MediumSeaGreen", "blue", "white", "black"],
     "showComponent": "horizontal"
   },
   {
     "level": 9,
     "country": "romania",
     "continent": "europe",
-    "blockColors": ["blue", "yellow", "red"],
+    "blockColors": ["Navy", "Gold", "Crimson"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["Crimson", "orange", "Gold", "green", "Navy", "white", "black"],
     "showComponent": "horizontal"
   },
   {
     "level": 10,
     "country": "armenia",
     "continent": "asia",
-    "blockColors": ["red", "blue", "orange"],
+    "blockColors": ["red", "MediumBlue", "orange"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "orange", "yellow", "green", "MediumBlue", "white", "black"],
     "showComponent": "vertical"
   },
   {
@@ -74,97 +94,125 @@
     "country": "austria",
     "continent": "europe",
     "blockColors": ["red", "white", "red"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "orange", "yellow", "green", "blue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 12,
     "country": "bulgaria",
     "continent": "europe",
-    "blockColors": ["white", "green", "red"],
+    "blockColors": ["white", "MediumSeaGreen", "Crimson"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["Crimson", "orange", "yellow", "MediumSeaGreen", "blue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 13,
     "country": "colombia",
     "continent": "south america",
-    "blockColors": ["yellow", "blue", "red"],
+    "blockColors": ["Gold", "DarkBlue", "Crimson"],
+    "blockFlex": [2, 1, 1],
+    "colors": ["Crimson", "orange", "Gold", "green", "DarkBlue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 14,
     "country": "estonia",
     "continent": "europe",
-    "blockColors": ["blue", "black", "white"],
+    "blockColors": ["RoyalBlue", "black", "white"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "orange", "yellow", "green", "RoyalBlue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 15,
     "country": "gabon",
     "continent": "africa",
-    "blockColors": ["green", "yellow", "blue"],
+    "blockColors": ["SeaGreen", "Gold", "MediumBlue"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "orange", "Gold", "SeaGreen", "MediumBlue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 16,
     "country": "germany",
     "continent": "europe",
-    "blockColors": ["black", "red", "yellow"],
+    "blockColors": ["black", "Crimson", "Gold"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["Crimson", "orange", "Gold", "green", "blue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 17,
     "country": "hungary",
     "continent": "europe",
-    "blockColors": ["red", "white", "green"],
+    "blockColors": ["Crimson", "white", "SeaGreen"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["Crimson", "orange", "yellow", "SeaGreen", "blue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 18,
     "country": "latvia",
     "continent": "europe",
-    "blockColors": ["red", "white", "red-dark"],
+    "blockColors": ["FireBrick", "white", "FireBrick"],
+    "blockFlex": [2, 1, 2],
+    "colors": ["FireBrick", "orange", "yellow", "green", "blue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 19,
     "country": "lithuania",
     "continent": "europe",
-    "blockColors": ["yellow", "green", "red"],
+    "blockColors": ["Gold", "SeaGreen", "Crimson"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["Crimson", "orange", "Gold", "SeaGreen", "blue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 20,
     "country": "luxembourg",
     "continent": "europe",
-    "blockColors": ["red", "white", "DeepSkyBlue"],
+    "blockColors": ["red", "white", "LightSkyBlue"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "orange", "yellow", "green", "LightSkyBlue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 21,
     "country": "netherlands",
     "continent": "europe",
-    "blockColors": ["red", "white", "blue"],
+    "blockColors": ["FireBrick", "white", "DarkBlue"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["FireBrick", "orange", "yellow", "green", "DarkBlue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 22,
     "country": "russia",
     "continent": "asia / europe",
-    "blockColors": ["white", "blue", "red"],
+    "blockColors": ["white", "MediumBlue", "red"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "orange", "yellow", "green", "MediumBlue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 23,
     "country": "sierra leone",
     "continent": "africa",
-    "blockColors": ["green", "white", "blue"],
+    "blockColors": ["MediumSeaGreen", "white", "RoyalBlue"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["red", "orange", "yellow", "MediumSeaGreen", "RoyalBlue", "white", "black"],
     "showComponent": "vertical"
   },
   {
     "level": 24,
     "country": "yemen",
     "continent": "asia",
-    "blockColors": ["red", "white", "black"],
+    "blockColors": ["Crimson", "white", "black"],
+    "blockFlex": [1, 1, 1],
+    "colors": ["Crimson", "orange", "yellow", "green", "blue", "white", "black"],
     "showComponent": "vertical"
   }
 ]

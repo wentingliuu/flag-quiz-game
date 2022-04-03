@@ -40,14 +40,14 @@
       background-repeat: no-repeat;
       background-size: 120%;
       animation: show 3s linear;
-      background-position-x: -150%;
+      background-position-x: -120%;
 
       @keyframes show {
         0% {
           background-position-x: 300%;
         }
         100% {
-          background-position-x: -150%;
+          background-position-x: -120%;
         }
       }
     }
@@ -70,13 +70,14 @@
       background-color: var(--dark-purple);
     }
   }
-  p {
+  .copy-right {
+    display: block;
     margin-top: 2rem;
     font-size: 0.5rem;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .entry {
     .brush {
       right: 0;
