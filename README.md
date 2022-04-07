@@ -13,32 +13,32 @@ When I was thinking about the topic for my side project, I found out that there'
 
 
 ## FEATURES & HOW TO PLAY
-*  **STYLISH LANDING PAGE**
+#### STYLISH LANDING PAGE
 
 Yes, I designed a landing page with *simple animation* for this mini game! Just click "START" to play.
 
 ![landing page](https://github.com/wentingliuu/flag-quiz-game/blob/main/src/assets/images/flag-landing.gif)
 
-*  **PANIT THE FLAG**
+#### PANIT THE FLAG
 
 Click the colors on color palette, and those *3 blocks* would be filled with the selected color in order. The *PURPLE* border indicates which block you are painting now. After colored the flag, click "SUBMIT" to see whether you have the correct answer or not.
 
 ![paint the flag](https://github.com/wentingliuu/flag-quiz-game/blob/main/src/assets/images/flag-paint.gif)
 
-*  **CHOOSE THE BLOCK YOU WANT TO PANIT**
+#### CHOOSE THE BLOCK YOU WANT TO PANIT
 
 Even though I have set the step 1 to 3 for you, you still could choose the block you want.
 When clicking the block, no matter it's filled or not, the block color would be reset. Thus, you could paint the block again.
 
 ![choose the block](https://github.com/wentingliuu/flag-quiz-game/blob/main/src/assets/images/flag-choose.gif)
 
-*  **TAKE THE ELEVATOR TO WHATEVER LEVEL**
+#### TAKE THE ELEVATOR TO WHATEVER LEVEL
 
 There's totally *24 levels* for this mini game. If you don't want to go through each level, just wanna see the FINISHED scene. Click "LEVEL" button on top-right, and you could go to all levels. (And I putted *flag emojis* in LEVEL page, it could be a hint for you!)
 
 ![level](https://github.com/wentingliuu/flag-quiz-game/blob/main/src/assets/images/flag-level.gif)
 
-*  **RESPONSIVE WEB DESIGN**
+#### RESPONSIVE WEB DESIGN
 
 Of course, there's different design for mobile phone, tablet & desktop.
 
